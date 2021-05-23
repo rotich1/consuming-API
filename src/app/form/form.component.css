@@ -1,0 +1,53 @@
+.btn {
+    margin-top: 10px;
+    width: 80%;
+}
+
+.form-control {
+    width: 80%;
+}
+
+p {
+    font-size: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 10px;
+}
+
+a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 4px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img{
+    margin: 10px;
+    float: left;
+    margin: 20px;
+}
+
+.form{
+    margin: 15px;
+}
+
+.alert{
+    font-size: 20px;
+    color: black;
+    font-weight: 500;
+    font-style: italic;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+}
+
+.alert>p{
+    width: 100%;
+}

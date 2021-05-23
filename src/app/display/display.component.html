@@ -1,14 +1,24 @@
+<ng-progress></ng-progress>
 <div class="container">
-    <div class="row">
-        <div class="col-md-6">
-            <p>Account username is <strong>{{user.login}}</strong></p><br>
-            <img src="{{user.avatar_url}}" alt="Image" height="200px" width="200px"><br>
-            <p>There are <strong>{{user.public_repos}}</strong> number of repositories in this account.</p><br>
-            <p>{{user.created_at | date}}</p>
-        </div>
-
-        <div class="col-md-6">
-            
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div *ngFor='let respositoryDetail of respositoryDetails'>
+            <div class="col-md-12">
+                <div class="card-group">
+                    <div class="card">
+                        <h5 appColor class="card-title">{{respositoryDetail.name}}</h5>
+                        <p class="card-text">{{respositoryDetail.description}}</p>
+                        <p class="card-text">Language used is {{respositoryDetail.language}}</p>
+                        <p class="card-text"><a href="{{respositoryDetail.html_url}}">Visit</a> the project
+                            repository
+                        </p>
+                        <p class="card-text"><small class="text-muted">Created on
+                                {{respositoryDetail.created_at|date}}</small>
+                        </p>
+                        <p class="card-text"><small class="text-muted">Updated on
+                                {{respositoryDetail.updated_at|date}}</small></p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 

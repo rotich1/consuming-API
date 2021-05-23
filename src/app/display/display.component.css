@@ -7,3 +7,9 @@
 .project{
     float: right;
 }
+
+p{
+    font-size: 19px;
+    font-family: serif;
+    line-height: 30px;
+}
