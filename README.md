@@ -1,6 +1,14 @@
-# ConsumingGitAPI
+# Consuming GitAPI
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.12.
+### This is a siple website application enable users to view github details using github username, May 2021
+
+#### Copyright (c) 2021 Kiptoo Rotich
+
+## Description
+
+This website allows users to retrive github data by providing github username which is added to github api url hence allowing the website to fetch details. User can also view repositories that are available in the account so far, the date they were created, last update and the language used.
+
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.13.
 
 ## Development server
 
@@ -22,6 +30,19 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### Live Site
+View [live](rotich1.github.io/)
+
+## Technologies Used
+* HTML
+* CSS
+* Javascript/jQuery
+* Typescript
+* Git
+  
+## Support and contact details
+Kindly let us know your feedbacks and concerns and you can also ask questions through our email address rotichenoch27@gmail.com.
+
+### License
+This is under the [MIT](LICENSE) license

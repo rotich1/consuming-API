@@ -1,5 +1,5 @@
 .card {
-    background-color: aliceblue;
+    background-color: rgb(209, 233, 255);
     padding: 25px;
     margin-top: 3%;
 }
@@ -9,7 +9,7 @@
 }
 
 p{
-    font-size: 19px;
+    font-size: 20px;
     font-family: serif;
-    line-height: 30px;
+    line-height: 30px;font-weight: 400;
 }
