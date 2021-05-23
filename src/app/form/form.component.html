@@ -1,4 +1,28 @@
-<form (ngSubmit)='submitForm()' #form='ngForm' name="form">
-    <input type="text" name="username" id="username" class="form-control" [(ngModel)]="username" placeholder="GitHub username">
-    <button type="submit" class="btn btn-lg btn-outline-success">SUBMIT</button>
-</form>
+<ng-progress></ng-progress>
+<div class="row">
+    <div class="col-md-5">
+        <div class="form">
+            <form (ngSubmit)='submitForm()' #form='ngForm' name="form">
+                <input type="text" name="username" id="username" class="form-control" [(ngModel)]="username"
+                    placeholder="GitHub username">
+                <button type="submit" class="btn btn-lg btn-outline-success">Fetch GitHub Data</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="col-md-7">
+        <div *ngIf='user.login'>
+            <img src="{{user.avatar_url}}" alt="Image" height="200px" width="200px"><br>
+            <h4>Account username is <strong><em>{{user.login}}</em></strong></h4><br>
+            <p>This account has <strong>{{user.public_repos}}</strong> repositories and was create on
+                <em>{{user.created_at | date}}</em>.
+            </p>
+            <button class="btn btn-primary"><a href="{{user.html_url}}">Go to GitHub</a></button>
+        </div>
+        <div *ngIf='!user.login'>
+            <div class="alert alert-success">
+                <p>GitHub user details will appear here.</p>
+            </div>
+        </div>
+    </div>
+</div>
