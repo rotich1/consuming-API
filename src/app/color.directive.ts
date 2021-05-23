@@ -10,6 +10,8 @@ export class ColorDirective {
     this.element.nativeElement.style.textTransform= "uppercase"
     this.element.nativeElement.style.fontFamily = "serif"
     this.element.nativeElement.style.weight = "700"
+    this.element.nativeElement.style.textDecoration = "underline"
+
   }
 
 }
