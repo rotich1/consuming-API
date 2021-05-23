@@ -1,0 +1,9 @@
+.card {
+    background-color: aliceblue;
+    padding: 25px;
+    margin-top: 3%;
+}
+
+.project{
+    float: right;
+}
