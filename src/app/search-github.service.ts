@@ -32,7 +32,7 @@ export class SearchGithubService {
       html_url: string,
       hireable: boolean
     }
-    let apiUrl =`https://api.github.com/users/${username}`
+    let apiUrl =`https://api.github.com/users/${username}`;
     let promise = new Promise<void>((resolve, reject) => {
       this.http.get<ApiResponse>(apiUrl).toPromise().then(response => {
         this.user.public_repos = response.public_repos;
