@@ -7,7 +7,7 @@
     margin-top: 3%;
 }
 
-.link:first-child{
+.link:first-child {
     margin-left: 10%;
 }
 
@@ -29,4 +29,13 @@
 a {
     color: white;
     border-radius: 5px;
+}
+
+h1 {
+    font-family: 'Merienda', cursive;
+    font-size: 45px;
+    text-align: center;
+}
+.img{
+    text-align: center;
 }

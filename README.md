@@ -32,7 +32,8 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 
 ### Live Site
-View [live](rotich1.github.io/)
+View [live](https://rotich1.github.io/consuming-API/)
+
 
 ## Technologies Used
 * HTML
