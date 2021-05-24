@@ -32,8 +32,9 @@ export class SearchGithubService {
       html_url: string,
       hireable: boolean
     }
+
     let promise = new Promise<void>((resolve, reject) => {
-      this.http.get<ApiResponse>("https://api.github.com/users/" + username).toPromise().then(response => {
+      this.http.get<ApiResponse>(environment.apiUrl + username).toPromise().then(response => {
         this.user.public_repos = response.public_repos;
         this.user.login = response.login;
         this.user.avatar_url = response.avatar_url;
@@ -46,7 +47,7 @@ export class SearchGithubService {
         error => {
           reject();
         })
-      this.http.get<any>("https://api.github.com/users/"+username+"/repos").toPromise().then(response => {
+      this.http.get<any>(environment.apiUrl + username + "/repos").toPromise().then(response => {
         for (let i = 0; i < response.length; i++) {
           this.newUserData = new Repo(response[i].name, response[i].description, response[i].updated_at, response[i].clone_link, response[i].language, response[i].html_url, response[i].created_at);
           this.repositoryData.push(this.newUserData);
