@@ -8,8 +8,8 @@ import { DisplayComponent } from './display/display.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ColorDirective } from './color.directive';
-import { NgProgressModule } from '@ngx-progressbar/core';
-import { NgProgressHttpClientModule } from '@ngx-progressbar/http-client';
+// import { NgProgressModule } from '@ngx-progressbar/core';
+// import { NgProgressHttpClientModule } from '@ngx-progressbar/http-client';
 import { NotFoundComponent } from './not-found/not-found.component';
 
 
@@ -27,8 +27,8 @@ import { NotFoundComponent } from './not-found/not-found.component';
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
-    NgProgressModule.forRoot(),
-    NgProgressHttpClientModule
+    // NgProgressModule.forRoot(),
+    // NgProgressHttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

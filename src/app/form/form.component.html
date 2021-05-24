@@ -1,4 +1,4 @@
-<ng-progress></ng-progress>
+<!-- <ng-progress></ng-progress> -->
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap" rel="stylesheet">
 <div class="row">
@@ -8,7 +8,7 @@
             <form (ngSubmit)='submitForm()' #form='ngForm' name="form">
                 <input type="text" name="username" id="username" class="form-control" [(ngModel)]="username"
                     placeholder="GitHub username">
-                <button type="submit" class="btn btn-lg btn-outline-success">Fetch GitHub Data</button>
+                <button type="submit" class="btn btn-lg btn-outline-success">Search</button>
             </form>
         </div>
     </div>
@@ -20,11 +20,11 @@
             <p>This account has <strong>{{user.public_repos}}</strong> repositories and was create on
                 <em>{{user.created_at | date}}</em>.
             </p>
-            <button class="btn btn-primary"><a href="{{user.html_url}}">Go to GitHub</a></button>
+            <button class="btn btn-primary"><a href="{{user.html_url}}">Visit this account</a></button>
         </div>
         <div *ngIf='!user.login'>
-            <div class="alert alert-success">
-                <p id="alt"><img src="../../assets/GitHub.png" alt="Github" height="auto" width="250px"> user details will appear here.</p>
+            <div class="alert bg-white">
+                <p id="alt"><img src="../../assets/GitHub.jpg" alt="Github" height="auto" width="250px"> user details will appear here.</p>
             </div>
         </div>
     </div>
