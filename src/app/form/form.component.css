@@ -48,6 +48,7 @@ img {
     flex-direction: row;
     align-items: center;
     text-align: center;
+    color: navy;
 }
 
 .alert>p {
