@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { SearchGithubService } from '../search-github.service';
-import { TimeCountPipe } from '../time-count.pipe';
 import { User } from '../user';
 
 @Component({
@@ -13,7 +12,6 @@ export class FormComponent implements OnInit {
   username: string;
   user: User;
   searchGithubService: SearchGithubService;
-  timecount: TimeCountPipe;
   
 
   submitForm() {

@@ -7,7 +7,6 @@ import { FormComponent } from './form/form.component';
 import { DisplayComponent } from './display/display.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { TimeCountPipe } from './time-count.pipe';
 import { ColorDirective } from './color.directive';
 import { NgProgressModule } from '@ngx-progressbar/core';
 import { NgProgressHttpClientModule } from '@ngx-progressbar/http-client';
@@ -19,7 +18,6 @@ import { NotFoundComponent } from './not-found/not-found.component';
     AppComponent,
     FormComponent,
     DisplayComponent,
-    TimeCountPipe,
     ColorDirective,
     NotFoundComponent,
   ],
