@@ -4,7 +4,8 @@
 
 export const environment = {
   production: true,
-  apiUrl: "https://api.github.com/users/"
+  apiUrl1 : `https://api.github.com/users/username/repos`
+
 };
 
 /*
