@@ -39,3 +39,8 @@ h1 {
 .img{
     text-align: center;
 }
+
+.out{
+    float: right;
+    width: 25%;
+}
